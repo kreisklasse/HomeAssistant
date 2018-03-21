@@ -1,0 +1,22 @@
+- platform: darksky
+  api_key: !secret darksky_api
+  monitored_conditions:
+    - temperature
+    - apparent_temperature
+    - dew_point
+    - pressure
+    - precip_intensity
+    - wind_speed
+    - wind_bearing
+    - humidity
+    - icon
+    - nearest_storm_distance
+    - precip_type
+    - ozone
+    - temperature_max
+    - temperature_min
+    - visibility
+    - hourly_summary
+    - cloud_cover
+  update_interval:
+    minutes: 5
