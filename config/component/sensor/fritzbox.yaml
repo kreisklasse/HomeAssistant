@@ -1,0 +1,8 @@
+- platform: fritzbox_netmonitor
+  host: !secret hasspi_ip
+  
+- platform: fritzbox_callmonitor
+  name: FritzBox SU
+  host: !secret fritzboxsu_ip
+  username: !secret fritzboxsu_id
+  password: !secret fritzboxsu_pw
