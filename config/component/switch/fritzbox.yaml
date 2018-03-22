@@ -1,0 +1,3 @@
+- platform: fritzdect
+  username: !secret fritzboxsu_id
+  password: !secret fritzboxsu_pw
