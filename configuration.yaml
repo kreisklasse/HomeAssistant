@@ -23,6 +23,7 @@ hue:
   bridges:
     - host: !secret hue_ip
 map:
+script: !include scripts.yaml
 sun:
 tts:
   - platform: google
@@ -34,13 +35,8 @@ history:
 recorder: !include config/core/recorder.yaml
 logbook: !include config/core/logbook.yaml
 
-##
 ## My components/devices/sensors/etc ##
-##
 sensor: !include_dir_merge_list config/component/sensor
 switch: !include_dir_merge_list config/component/switch
 binary_sensor: !include_dir_merge_list config/component/binarysensor
 device_tracker: !include_dir_merge_list config/component/devicetracker
-##
-
-script: !include scripts.yaml
