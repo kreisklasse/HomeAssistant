@@ -31,30 +31,10 @@ tts:
 updater:
   include_used_components: true
 
-
-# Enables support for tracking state changes over time
+# Tracking - Logging
 history:
-  exclude:
-    entities:
-      - sun.sun
-      - binary_sensor.workday_sensor
-      - sensor.yr_symbol
-      - sensor.dark_sky_apparent_temperature
-
-recorder:
-  purge_keep_days: 14
-  exclude:
-    entities:
-      - sun.sun
-      - binary_sensor.workday_sensor
-      - sensor.yr_symbol
-      - sensor.dark_sky_apparent_temperature
-
-# View all events in a logbook
-logbook:
-
-
-
+recorder: !include config/core/recorder.yaml
+logbook: !include config/core/logbook.yaml
 
 ##
 ## My components/devices/sensors/etc ##
