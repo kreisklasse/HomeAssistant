@@ -1,5 +1,6 @@
 - platform: netdata
   host: !secret pihole_ip
+  port 19999
   name: pi1Hole Netdata
   resources:
     - memory_free
