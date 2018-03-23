@@ -1,0 +1,4 @@
+  exclude:
+    entities:
+      - sun.sun
+      - sensor.since_last_boot
