@@ -1,0 +1,11 @@
+- platform: google_travel_time
+  api_key: !secret googleapi_distance
+  name: Fahrzeit Arbeit
+  origin: !secret google_origin
+  destination: !secret google_destination_arbeit
+    
+- platform: google_travel_time
+  api_key: !secret googleapi_distance
+  name: Fahrzeit Heimat
+  origin: !secret google_origin
+  destination: !secret google_destination_heimat
