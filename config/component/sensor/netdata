@@ -1,0 +1,10 @@
+- platform: netdata
+  host: !secret pihole_ip
+  name: pi1Hole Netdata
+  resources:
+    - memory_free
+    - memory_used
+    - system_load
+    - swap_free
+    - swap_used
+    - uptime
