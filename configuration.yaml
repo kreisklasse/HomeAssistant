@@ -1,3 +1,5 @@
+# configuration.yaml - 23.03.2018-a
+
 homeassistant:
   name: Home
   latitude: !secret home_latitude
@@ -7,23 +9,19 @@ homeassistant:
   time_zone: Europe/Berlin
   customize: !include customize.yaml
  
-binary_sensor:
-  - platform: workday
-    country: DE
-    province: NW
-
 # introduction:
 # cloud:
 
+automation: !include_dir_merge_list config/etc/automation
 config:
 conversation:
 discovery:
 frontend:
+group: !include_dir_merge_named config/interface/group
 http:
-  # Secrets are defined in the file secrets.yaml
-  # api_password: !secret http_password
-  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
+hue:
+  bridges:
+    - host: !secret hue_ip
 map:
 sun:
 tts:
@@ -41,8 +39,7 @@ logbook: !include config/core/logbook.yaml
 ##
 sensor: !include_dir_merge_list config/component/sensor
 switch: !include_dir_merge_list config/component/switch
+binary_sensor: !include_dir_merge_list config/component/binarysensor
 ##
 
-group: !include groups.yaml
-automation: !include automations.yaml
 script: !include scripts.yaml
