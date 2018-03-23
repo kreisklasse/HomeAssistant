@@ -1,4 +1,2 @@
 - platform: fritz
   host: !secret fritzboxsu_ip
-  username: !secret fritzboxsu_id
-  password: !secret fritzboxsu_pw
