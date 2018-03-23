@@ -2,3 +2,9 @@
     entities:
       - sun.sun
       - sensor.since_last_boot
+      - media_player.kuche
+      - media_player.kuche_2
+      - media_player.schlafzimmer
+      - media_player.schlafzimmer_2
+      - media_player.wohnzimmer
+      - media_player.wohnzimmer_2
