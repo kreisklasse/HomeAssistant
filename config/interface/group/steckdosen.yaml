@@ -9,17 +9,17 @@ steckdosen:
     - group.fritzofficelinks
     - group.fritzofficemitte
     - group.fritzofficerechts
-    - group.fritzalexa
+    - group.fritzassistenten
     - group.fritztv
     - group.fritzbed
     
 fritzkuchemitte:
   name: Küche Mitte
   entities:
-    - switch.kuche_mitte
-    - sensor.fritzkuchemittewatt
-    - sensor.fritzkuchemittekwh
-    - sensor.fritzkuchemittetemp
+    - switch.balkontur
+    - sensor.fritzbalkonturwatt
+    - sensor.fritzbalkonturkwh
+    - sensor.fritzbalkonturtemp
     
 fritzkucherechts:
   name: Küche Rechts
@@ -61,13 +61,13 @@ fritzofficerechts:
     - sensor.fritzofficerechtskwh
     - sensor.fritzofficerechtstemp
     
-fritzalexa:
+fritzassistenten:
   name: Assistenten
   entities:
-    - switch.alexa
-    - sensor.fritzalexawatt
-    - sensor.fritzalexakwh
-    - sensor.fritzalexatemp
+    - switch.assistenten
+    - sensor.fritzassistentenwatt
+    - sensor.fritzassistentenkwh
+    - sensor.fritzassistententemp
     
 fritzbed:
   name: Schlafzimmer
