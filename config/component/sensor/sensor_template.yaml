@@ -5,7 +5,7 @@
     acerdesktop:
       value_template: "{{ 'Online' if is_state('device_tracker.acerdesktop', 'home') else 'Offline' }}"
     alexa:
-      value_template: "{{ 'Online' if is_state('device_tracker.acerdesktop', 'home') else 'Offline' }}"
+      value_template: "{{ 'Online' if is_state('device_tracker.alexa', 'home') else 'Offline' }}"
     firesticktvsu:
       value_template: "{{ 'Online' if is_state('device_tracker.amazonfiresticksu', 'home') else 'Offline' }}"
     arcospad:
