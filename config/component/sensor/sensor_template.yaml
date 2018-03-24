@@ -1,0 +1,164 @@
+- platform: template
+  sensors:
+    
+# Hardware Status on-offline
+    acerdesktop:
+      value_template: "{{ 'Online' if is_state('device_tracker.acerdesktop', 'home') else 'Offline' }}"
+    alexa:
+      value_template: "{{ 'Online' if is_state('device_tracker.acerdesktop', 'home') else 'Offline' }}"
+    firesticktvsu:
+      value_template: "{{ 'Online' if is_state('device_tracker.amazonfiresticksu', 'home') else 'Offline' }}"
+    arcospad:
+      value_template: "{{ 'Online' if is_state('device_tracker.arcospad', 'home') else 'Offline' }}"
+    ccaudiokuche:
+      value_template: "{{ 'Online' if is_state('device_tracker.ccaudio', 'home') else 'Offline' }}"
+    ccvideotv:
+      value_template: "{{ 'Online' if is_state('device_tracker.cctv', 'home') else 'Offline' }}"
+    chromebox:
+      value_template: "{{ 'Online' if is_state('device_tracker.chromebox', 'home') else 'Offline' }}"
+    epsonbx525wd:
+      value_template: "{{ 'Online' if is_state('device_tracker.epsondruckscanner', 'home') else 'Offline' }}"
+    freifunkrouter:
+      value_template: "{{ 'Online' if is_state('device_tracker.freifunkrouter', 'home') else 'Offline' }}"
+    googlehome:
+      value_template: "{{ 'Online' if is_state('device_tracker.googlehome', 'home') else 'Offline' }}"
+    googlehomemini:
+      value_template: "{{ 'Online' if is_state('device_tracker.googlehomemini', 'home') else 'Offline' }}"
+    nexus6p:
+      value_template: "{{ 'Online' if is_state('device_tracker.huaweinexus6poliverpitzke', 'home') else 'Offline' }}"
+    huelightshub:
+      value_template: "{{ 'Online' if is_state('device_tracker.huelights', 'home') else 'Offline' }}"
+    ikealightshub:
+      value_template: "{{ 'Online' if is_state('device_tracker.ikealights', 'home') else 'Offline' }}"
+    medionpad:
+      value_template: "{{ 'Online' if is_state('device_tracker.medionpad', 'home') else 'Offline' }}"
+    pi1hole:
+      value_template: "{{ 'Online' if is_state('device_tracker.piholepi1', 'home') else 'Offline' }}"
+    samsungtv:
+      value_template: "{{ 'Online' if is_state('device_tracker.samsungtv', 'home') else 'Offline' }}"
+    sonos5:
+      value_template: "{{ 'Online' if is_state('device_tracker.sonos5', 'home') else 'Offline' }}"
+    sonosbar:
+      value_template: "{{ 'Online' if is_state('device_tracker.sonosbar', 'home') else 'Offline' }}"
+    sonosbridge:
+      value_template: "{{ 'Online' if is_state('device_tracker.sonosbridge', 'home') else 'Offline' }}"
+    
+      
+
+# FritzDECT 200 Steckdosen
+    fritzbalkonturwatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.balkontur.attributes.current_consumption }}"
+    fritzbalkonturkwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.balkontur.attributes.total_consumption }}"
+    fritzbalkonturtemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.balkontur.attributes.temperature }}"
+      
+    fritzkucheobenwatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.kuche_oben.attributes.current_consumption }}"
+    fritzkucheobenkwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.kuche_oben.attributes.total_consumption }}"
+    fritzkucheobentemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.kuche_oben.attributes.temperature }}"
+      
+    fritzkucherechtswatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.kuche_rechts.attributes.current_consumption }}"
+    fritzkucherechtskwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.kuche_rechts.attributes.total_consumption }}"
+    fritzkucherechtstemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.kuche_rechts.attributes.temperature }}"
+
+    fritzofficelinkswatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.office_links.attributes.current_consumption }}"
+    fritzofficelinkskwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.office_links.attributes.total_consumption }}"
+    fritzofficelinkstemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.office_links.attributes.temperature }}"
+      
+    fritzofficemittewatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.office_mitte.attributes.current_consumption }}"
+    fritzofficemittekwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.office_mitte.attributes.total_consumption }}"
+    fritzofficemittetemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.office_mitte.attributes.temperature }}"
+      
+    fritzofficerechtswatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.office_rechts.attributes.current_consumption }}"
+    fritzofficerechtskwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.office_rechts.attributes.total_consumption }}"
+    fritzofficerechtstemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.office_rechts.attributes.temperature }}"
+      
+    fritztvwatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.tv.attributes.current_consumption }}"
+    fritztvkwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.tv.attributes.total_consumption }}"
+    fritztvtemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.tv.attributes.temperature }}"
+      
+    fritzbedwatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.bed.attributes.current_consumption }}"
+    fritzbedkwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.bed.attributes.total_consumption }}"
+    fritzbedtemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.bed.attributes.temperature }}"
+      
+    fritzassistentenwatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.assistenten.attributes.current_consumption }}"
+    fritzassistentenkwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.assistenten.attributes.total_consumption }}"
+    fritzassistententemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.assistenten.attributes.temperature }}"
