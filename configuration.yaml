@@ -1,4 +1,4 @@
-# configuration.yaml - 23.03.2018-b
+# configuration.yaml - 24.03.2018-a
 
 homeassistant:
   name: Home
@@ -23,6 +23,10 @@ hue:
   bridges:
     - host: !secret hue_ip
 map:
+mqtt:
+  broker: core-mosquitto
+  username: !secret mqtt_id
+  password: !secret mqtt_pw
 script: !include scripts.yaml
 sun:
 tts:
@@ -40,3 +44,4 @@ sensor: !include_dir_merge_list config/component/sensor
 switch: !include_dir_merge_list config/component/switch
 binary_sensor: !include_dir_merge_list config/component/binarysensor
 device_tracker: !include_dir_merge_list config/component/devicetracker
+##
