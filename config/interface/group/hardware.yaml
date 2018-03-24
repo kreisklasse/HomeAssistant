@@ -12,8 +12,10 @@ homeautomation:
   name: Home Automation
   entities:
     - sensor.alexa
+    - sensor.googlehome
+    - sensor.googlehomemini
     - sensor.huelightshub
-    - sensor.ikealightshub    
+    - sensor.ikealightshub   
 
 hardware:
   name: Hardware
