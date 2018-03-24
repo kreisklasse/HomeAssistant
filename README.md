@@ -11,7 +11,7 @@ I am a newbie to HASS, so be patient with me.
 
 - [Home-Assistant.io](https://home-assistant.io/) 
 - [HASS.io](https://home-assistant.io/getting-started/) - Hassbian Docker Version running on Pi with [resinOS](https://resin.io/)
-- [HASSbian - Raspbian Image mit HomeAssistant auto-installer](https://home-assistant.io/docs/configuration/splitting_configuration/)
+- // [HASSbian - Raspbian Image mit HomeAssistant auto-installer](https://home-assistant.io/docs/configuration/splitting_configuration/) // i switched to HASS.io Docker Version
 - [Splitting up the configuration.yaml](https://github.com/cbulock/home-assistant-configs)
 - [Storing secrets](https://home-assistant.io/docs/configuration/secrets/)
 
@@ -22,6 +22,7 @@ I am a newbie to HASS, so be patient with me.
 - AVM FritzDECT 200 Wall Plugs
 - Google Chromecast Audio
 - Google Chromecast
+- Osram Smart+ Plugs via HUE Bridge
 - Philips Hue Bridge
 - Philips Hue Colour Bulbs
 - Sonos Loudspeaker
