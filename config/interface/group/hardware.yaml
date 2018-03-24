@@ -1,0 +1,40 @@
+hardwareinfo:
+  name: Hardware Info
+  view: yes
+  icon: mdi:chip
+  entities:
+    - group.homeautomation
+    - group.hardware
+    - group.hardware_mobil
+    - group.hardware_streaming
+    
+homeautomation:
+  name: Home Automation
+  entities:
+    - sensor.alexa
+    - sensor.huelightshub
+    - sensor.ikealightshub    
+
+hardware:
+  name: Hardware
+  entities:
+    - sensor.chromebox
+    - sensor.acerdesktop
+    - sensor.pi1hole
+    - sensor.epsonbx525wd
+    - sensor.freifunkrouter
+
+hardware_mobil:
+  name: Hardware - Mobil
+  entities:
+    - sensor.medionpad
+    - sensor.samsungnote8
+    - sensor.nexus6p
+    
+hardware_streaming:
+  name: Hardware - TV & Streaming
+  entities:
+    - sensor.samsungtv
+    - sensor.ccvideotv
+    - sensor.firesticktvsu
+    - sensor.ccaudiokuche
