@@ -1,0 +1,86 @@
+steckdosen:
+  name: Steckdosen
+  view: yes
+  icon: mdi:power-plug
+  entities:
+    - group.fritzkuchemitte
+    - group.fritzkucherechts
+    - group.fritzkucheoben
+    - group.fritzofficelinks
+    - group.fritzofficemitte
+    - group.fritzofficerechts
+    - group.fritzalexa
+    - group.fritztv
+    - group.fritzbed
+    
+fritzkuchemitte:
+  name: Küche Mitte
+  entities:
+    - switch.kuche_mitte
+    - sensor.fritzkuchemittewatt
+    - sensor.fritzkuchemittekwh
+    - sensor.fritzkuchemittetemp
+    
+fritzkucherechts:
+  name: Küche Rechts
+  entities:
+    - switch.kuche_rechts
+    - sensor.fritzkucherechtswatt
+    - sensor.fritzkucherechtskwh
+    - sensor.fritzkucherechtstemp
+
+fritzkucheoben:
+  name: Küche Oben
+  entities:
+    - switch.kuche_oben
+    - sensor.fritzkucheobenwatt
+    - sensor.fritzkucheobenkwh
+    - sensor.fritzkucheobentemp
+    
+fritzofficelinks:
+  name: Büro Links
+  entities:
+    - switch.office_links
+    - sensor.fritzofficelinkswatt
+    - sensor.fritzofficelinkskwh
+    - sensor.fritzofficelinkstemp
+    
+fritzofficemitte:
+  name: Büro Mitte
+  entities:
+    - switch.office_mitte
+    - sensor.fritzofficemittewatt
+    - sensor.fritzofficemittekwh
+    - sensor.fritzofficemittetemp
+    
+fritzofficerechts:
+  name: Büro Rechts
+  entities:
+    - switch.office_rechts
+    - sensor.fritzofficerechtswatt
+    - sensor.fritzofficerechtskwh
+    - sensor.fritzofficerechtstemp
+    
+fritzalexa:
+  name: Assistenten
+  entities:
+    - switch.alexa
+    - sensor.fritzalexawatt
+    - sensor.fritzalexakwh
+    - sensor.fritzalexatemp
+    
+fritzbed:
+  name: Schlafzimmer
+  entities:
+    - switch.bed
+    - sensor.fritzbedwatt
+    - sensor.fritzbedkwh
+    - sensor.fritzbedtemp
+    
+fritztv:
+  name: TV
+  entities:
+    - switch.tv
+    - sensor.fritztvwatt
+    - sensor.fritztvkwh
+    - sensor.fritztvtemp
