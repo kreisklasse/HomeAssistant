@@ -7,3 +7,4 @@
     - unique_domains
     - domains_being_blocked
     - unique_clients
+    - queries_forwarded
