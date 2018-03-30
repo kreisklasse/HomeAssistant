@@ -3,9 +3,12 @@ exclude:
   domains:
     - automation
     - updater
+    - device_tracker
+    - group
   entities:
     - sun.sun
     - binary_sensor.workday_sensor
+    - light.tradfri_group
     - sensor.yr_symbol
     - sensor.dark_sky_apparent_temperature
     - sensor.dark_sky_daily_high_temperature
@@ -16,12 +19,21 @@ exclude:
     - sensor.dark_sky_nearest_storm_distance
     - sensor.dark_sky_precip
     - sensor.fritzbox_su
+    - sensor.fritz_netmonitor
     - sensor.ha_uptime
     - sensor.last_boot
     - sensor.memory_free
+    - sensor.memory_use
     - sensor.memory_use_percent
+    - sensor.pi1hole_netdata_ram_free
+    - sensor.pi1hole_netdata_ram_used
+    - sensor.pi1hole_netdata_swap_free
+    - sensor.pi1hole_netdata_swap_used
+    - sensor.pi1hole_netdata_uptime
     - sensor.pihole_ads_percentage_blocked_today
     - sensor.pihole_dns_queries_today
     - sensor.pihole_dns_unique_domains
     - sensor.since_last_boot
     - sensor.swap_use_percent
+    - sensor.tradfri_remote_control
+    - sensor.zyxel_switch_uptime
