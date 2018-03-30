@@ -3,44 +3,61 @@
     
 # Hardware Status on-offline
     acerdesktop:
+      friendly_name: Acer Desktop
       value_template: "{{ 'Online' if is_state('device_tracker.acerdesktop', 'home') else 'Offline' }}"
     alexa:
+      friendly_name: Alexa
       value_template: "{{ 'Online' if is_state('device_tracker.alexa', 'home') else 'Offline' }}"
     firesticktvsu:
+      friendly_name: Amazon Fire Stick - SU
       value_template: "{{ 'Online' if is_state('device_tracker.amazonfiresticksu', 'home') else 'Offline' }}"
     arcospad:
       value_template: "{{ 'Online' if is_state('device_tracker.arcospad', 'home') else 'Offline' }}"
     ccaudiokuche:
+      friendly_name: Chromecast Audio Küche
       value_template: "{{ 'Online' if is_state('device_tracker.ccaudio', 'home') else 'Offline' }}"
     ccvideotv:
+      friendly_name: Chromecast TV
       value_template: "{{ 'Online' if is_state('device_tracker.cctv', 'home') else 'Offline' }}"
     chromebox:
+      friendly_name: ChromeBox
       value_template: "{{ 'Online' if is_state('device_tracker.chromebox', 'home') else 'Offline' }}"
     epsonbx525wd:
       value_template: "{{ 'Online' if is_state('device_tracker.epsondruckscanner', 'home') else 'Offline' }}"
     freifunkrouter:
+      friendly_name: Freifunk Router
       value_template: "{{ 'Online' if is_state('device_tracker.freifunkrouter', 'home') else 'Offline' }}"
     googlehome:
+      friendly_name: Google Home
       value_template: "{{ 'Online' if is_state('device_tracker.googlehome', 'home') else 'Offline' }}"
     googlehomemini:
+      friendly_name: Google Home Mini
       value_template: "{{ 'Online' if is_state('device_tracker.googlehomemini', 'home') else 'Offline' }}"
     nexus6p:
+      friendly_name: Huawei Nexus 6P
       value_template: "{{ 'Online' if is_state('device_tracker.huaweinexus6p', 'home') else 'Offline' }}"
     huelightshub:
+      friendly_name: HUE Hub
       value_template: "{{ 'Online' if is_state('device_tracker.huelights', 'home') else 'Offline' }}"
     ikealightshub:
+      friendly_name: IKEA Tradfri Hub
       value_template: "{{ 'Online' if is_state('device_tracker.ikealights', 'home') else 'Offline' }}"
     medionpad:
+      friendly_name: Medion Pad
       value_template: "{{ 'Online' if is_state('device_tracker.medionpad', 'home') else 'Offline' }}"
     pi1hole:
+      friendly_name: Raspberry Pi 1 - piHole
       value_template: "{{ 'Online' if is_state('device_tracker.piholepi1', 'home') else 'Offline' }}"
     samsungtv:
       value_template: "{{ 'Online' if is_state('device_tracker.samsungtv', 'home') else 'Offline' }}"
     sonos5:
+      friendly_name: Sonos Play 5
       value_template: "{{ 'Online' if is_state('device_tracker.sonos5', 'home') else 'Offline' }}"
     sonosbar:
+      friendly_name: Sonos Play Bar
       value_template: "{{ 'Online' if is_state('device_tracker.sonosbar', 'home') else 'Offline' }}"
     sonosbridge:
+      friendly_name: Sonos Bridge
       value_template: "{{ 'Online' if is_state('device_tracker.sonosbridge', 'home') else 'Offline' }}"
     
       
