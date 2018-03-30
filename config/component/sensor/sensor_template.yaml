@@ -25,7 +25,7 @@
     googlehomemini:
       value_template: "{{ 'Online' if is_state('device_tracker.googlehomemini', 'home') else 'Offline' }}"
     nexus6p:
-      value_template: "{{ 'Online' if is_state('device_tracker.huaweinexus6poliverpitzke', 'home') else 'Offline' }}"
+      value_template: "{{ 'Online' if is_state('device_tracker.huaweinexus6p', 'home') else 'Offline' }}"
     huelightshub:
       value_template: "{{ 'Online' if is_state('device_tracker.huelights', 'home') else 'Offline' }}"
     ikealightshub:
