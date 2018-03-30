@@ -7,6 +7,7 @@ hardwareinfo:
     - group.hardware
     - group.hardware_mobil
     - group.hardware_streaming
+    - group.pihole
     
 homeautomation:
   name: Home Automation
@@ -40,3 +41,16 @@ hardware_streaming:
     - sensor.ccvideotv
     - sensor.firesticktvsu
     - sensor.ccaudiokuche
+    
+pihole:
+  name: Hardware - pi1Hole
+  entities:    
+    - sensor.pi1hole
+    - sensor.pi1hole_netdata_uptime
+    - sensor.pihole_dns_queries_today
+    - sensor.pihole_ads_blocked_today
+    - sensor.pihole_dns_queries_forwarded
+    - sensor.pihole_dns_unique_clients
+    - sensor.pi1hole_netdata_system_load
+    - sensor.pi1hole_netdata_ram_used
+    - sensor.pi1hole_netdata_swap_used
