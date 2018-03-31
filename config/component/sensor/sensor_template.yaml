@@ -65,6 +65,9 @@
     sonosbridge:
       friendly_name: Sonos Bridge
       value_template: "{{ 'Online' if is_state('device_tracker.sonosbridge', 'home') else 'Offline' }}"
+    surfacebw:
+      friendly_name: Surface Pro
+      value_template: "{{ 'Online' if is_state('device_tracker.laptop145438848', 'home') else 'Offline' }}"
     
       
 
