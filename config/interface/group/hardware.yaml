@@ -31,8 +31,9 @@ hardware_mobil:
   name: Hardware - Mobil
   entities:
     - sensor.medionpad
-    - sensor.samsungnote8
+    - sensor.amazonfire7
     - sensor.nexus6p
+    - sensor.surfacebw
     
 hardware_streaming:
   name: Hardware - TV & Streaming
