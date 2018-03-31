@@ -8,10 +8,14 @@
     alexa:
       friendly_name: Alexa
       value_template: "{{ 'Online' if is_state('device_tracker.alexa', 'home') else 'Offline' }}"
+    amazonfire7:
+      friendly_name: Amazon Fire7 Pad
+      value_template: "{{ 'Online' if is_state('device_tracker.amazonca1158079', 'home') else 'Offline' }}"
     firesticktvsu:
       friendly_name: Amazon Fire Stick - SU
       value_template: "{{ 'Online' if is_state('device_tracker.amazonfiresticksu', 'home') else 'Offline' }}"
     arcospad:
+      friendly_name: Arcos Pad
       value_template: "{{ 'Online' if is_state('device_tracker.arcospad', 'home') else 'Offline' }}"
     ccaudiokuche:
       friendly_name: Chromecast Audio Küche
@@ -23,6 +27,7 @@
       friendly_name: ChromeBox
       value_template: "{{ 'Online' if is_state('device_tracker.chromebox', 'home') else 'Offline' }}"
     epsonbx525wd:
+      friendly_name: Epson BX525WD
       value_template: "{{ 'Online' if is_state('device_tracker.epsondruckscanner', 'home') else 'Offline' }}"
     freifunkrouter:
       friendly_name: Freifunk Router
@@ -35,7 +40,7 @@
       value_template: "{{ 'Online' if is_state('device_tracker.googlehomemini', 'home') else 'Offline' }}"
     nexus6p:
       friendly_name: Huawei Nexus 6P
-      value_template: "{{ 'Online' if is_state('device_tracker.huaweinexus6p', 'home') else 'Offline' }}"
+      value_template: "{{ 'Online' if is_state('device_tracker.huaweinexus6poliverpitzke', 'home') else 'Offline' }}"
     huelightshub:
       friendly_name: HUE Hub
       value_template: "{{ 'Online' if is_state('device_tracker.huelights', 'home') else 'Offline' }}"
@@ -49,6 +54,7 @@
       friendly_name: Raspberry Pi 1 - piHole
       value_template: "{{ 'Online' if is_state('device_tracker.piholepi1', 'home') else 'Offline' }}"
     samsungtv:
+      friendly_name: Samsung TV
       value_template: "{{ 'Online' if is_state('device_tracker.samsungtv', 'home') else 'Offline' }}"
     sonos5:
       friendly_name: Sonos Play 5
