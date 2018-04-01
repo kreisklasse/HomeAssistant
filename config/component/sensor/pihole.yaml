@@ -1,5 +1,5 @@
 - platform: pi_hole
-  host: !secret pihole_ip
+  host: !secret pi2vpnhole_ip
   monitored_conditions:
     - ads_blocked_today
     - ads_percentage_today
