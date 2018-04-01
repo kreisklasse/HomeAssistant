@@ -45,17 +45,17 @@ hardware_streaming:
     - sensor.ccaudiokuche
     
 pihole:
-  name: Hardware - pi1Hole
+  name: Hardware - Pi2 piHoleVPN
   entities:    
     - sensor.pi1hole
-    - sensor.pi1hole_netdata_uptime
+    - sensor.pi2vpnhole_netdata_uptime
     - sensor.pihole_dns_queries_today
     - sensor.pihole_ads_blocked_today
     - sensor.pihole_dns_queries_forwarded
     - sensor.pihole_dns_unique_clients
-    - sensor.pi1hole_netdata_system_load
-    - sensor.pi1hole_netdata_ram_used
-    - sensor.pi1hole_netdata_swap_used
+    - sensor.pi2vpnhole_netdata_system_load
+    - sensor.pi2vpnhole_netdata_ram_used
+    - sensor.pi2vpnhole_netdata_swap_used
 
 pihassio:
   name: Hardware - pi3Hassio
