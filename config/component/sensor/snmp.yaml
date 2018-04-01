@@ -5,5 +5,5 @@
   community: hass
   accept_errors: true
   baseoid: 1.3.6.1.2.1.1.3.0
-  unit_of_measurement: 'hours'
-  value_template: '{{((value | int) / 360000) | int}}'
+  unit_of_measurement: 'days'
+  value_template: '{{((value | int) / 8640000) | round(1)}}'
