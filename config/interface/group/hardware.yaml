@@ -17,14 +17,15 @@ homeautomation:
     - sensor.googlehome
     - sensor.googlehomemini
     - sensor.huelightshub
-    - sensor.ikealightshub   
+    - sensor.ikealightshub
+    - sensor.pi2
+    - sensor.pi3iob
 
 hardware:
   name: Hardware
   entities:
     - sensor.chromebox
     - sensor.acerdesktop
-    - sensor.pi1hole
     - sensor.epsonbx525wd
     - sensor.freifunkrouter
 
@@ -47,7 +48,7 @@ hardware_streaming:
 pihole:
   name: Hardware - Pi2 piHoleVPN
   entities:    
-    - sensor.pi1hole
+    - sensor.pi2
     - sensor.pi2vpnhole_netdata_uptime
     - sensor.pihole_dns_queries_today
     - sensor.pihole_ads_blocked_today
@@ -56,16 +57,15 @@ pihole:
     - sensor.pi2vpnhole_netdata_system_load
     - sensor.pi2vpnhole_netdata_ram_used
     - sensor.pi2vpnhole_netdata_swap_used
-
+    
 pihassio:
   name: Hardware - pi3Hassio
   entities:    
-    - sensor.last_boot
     - sensor.since_last_boot
     - sensor.memory_use
     - sensor.memory_use_percent
     - sensor.swap_use_percent
     - sensor.load_1m
     - sensor.load_5m
-    - sensor.load_5m
+    - sensor.load_15m
     - sensor.processor_use
