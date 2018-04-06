@@ -1,4 +1,4 @@
-# configuration.yaml - 24.03.2018-a
+# configuration.yaml - 05.04.2018-a
 
 homeassistant:
   name: Home
@@ -22,6 +22,8 @@ http:
 hue:
   bridges:
     - host: !secret hue_ip
+      allow_unreachable: true
+      allow_hue_groups: true
 map:
 mqtt:
   broker: core-mosquitto
