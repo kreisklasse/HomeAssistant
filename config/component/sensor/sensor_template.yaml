@@ -53,6 +53,12 @@
     pi1hole:
       friendly_name: Raspberry Pi 1 - piHole
       value_template: "{{ 'Online' if is_state('device_tracker.piholepi1', 'home') else 'Offline' }}"
+    pi2:
+      friendly_name: Raspberry Pi 2 - piHoleVPN
+      value_template: "{{ 'Online' if is_state('device_tracker.pi2', 'home') else 'Offline' }}"
+    pi3iob:
+      friendly_name: Raspberry Pi 3 - ioBroker
+      value_template: "{{ 'Online' if is_state('device_tracker.iobrokerpi', 'home') else 'Offline' }}"
     samsungtv:
       friendly_name: Samsung TV
       value_template: "{{ 'Online' if is_state('device_tracker.samsungtv', 'home') else 'Offline' }}"
