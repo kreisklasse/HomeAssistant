@@ -4,3 +4,17 @@
 #    minutes: 30
   max_age:
     minutes: 120
+
+- platform: statistics
+  entity_id: sensor.wolsdorf_pm25
+#  sampling_size:
+#    minutes: 30
+  max_age:
+    minutes: 480
+
+- platform: statistics
+  entity_id: sensor.wolsdorf_pm10
+#  sampling_size:
+#    minutes: 30
+  max_age:
+    minutes: 480
