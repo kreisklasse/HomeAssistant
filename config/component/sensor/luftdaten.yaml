@@ -1,0 +1,12 @@
+- platform: luftdaten
+  sensorid: 6580
+  name: Wolsdorf
+  monitored_conditions:
+    - P1
+    - P2
+    
+- platform: luftdaten
+  sensorid: 6581
+  monitored_conditions:
+    - temperature
+    - humidity
