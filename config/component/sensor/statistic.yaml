@@ -1,7 +1,7 @@
 - platform: statistics
   entity_id: sensor.dark_sky_temperature
-  sampling_size:
-    minutes: 1440
+#  sampling_size:
+#    minutes: 1440
   max_age:
     minutes: 1440
     
