@@ -1,20 +1,27 @@
 - platform: statistics
   entity_id: sensor.dark_sky_temperature
+  sampling_size:
+    minutes: 1440
+  max_age:
+    minutes: 1440
+    
+#- platform: statistics
+#  entity_id: sensor.dark_sky_temperature
 #  sampling_size:
 #    minutes: 30
-  max_age:
-    minutes: 120
+#  max_age:
+#    minutes: 120
 
 - platform: statistics
   entity_id: sensor.wolsdorf_pm25
 #  sampling_size:
 #    minutes: 30
   max_age:
-    minutes: 480
+    minutes: 1440
 
 - platform: statistics
   entity_id: sensor.wolsdorf_pm10
 #  sampling_size:
 #    minutes: 30
   max_age:
-    minutes: 480
+    minutes: 1440
