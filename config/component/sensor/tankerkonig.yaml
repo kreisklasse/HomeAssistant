@@ -1,0 +1,16 @@
+# 08Apr2018-a
+# https://community.home-assistant.io/t/gas-price-via-tankerkonig-germany/14980
+#
+- platform: rest
+  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=1001&ids=2025cec6-d76f-422b-b305-fe6b75be12e9
+  name: Mundorf E10
+  unit_of_measurement: '€'
+  value_template: '{{ value_json.prices["2025cec6-d76f-422b-b305-fe6b75be12e9"].e10 }}'
+  scan_interval: 900
+  
+- platform: rest
+  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=1001&ids=005056ba-7cb6-1ed2-bceb-87412ca64d30
+  name: Zeithstr E10
+  unit_of_measurement: '€'
+  value_template: '{{ value_json.prices["005056ba-7cb6-1ed2-bceb-87412ca64d30"].e10 }}'
+  scan_interval: 902
