@@ -1,0 +1,23 @@
+# Kitchen - switch blue LED-stripes: on sunset / off 22:00 / daily
+# 08.04.2018-a
+#
+- alias: Blaue Küche An
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: sun
+    event: sunset
+#    offset: "+00:30:00"
+  action:
+    service: switch.turn_on
+    entity_id: switch.kuche_oben
+
+- alias: Blaue Küche Aus
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: "22:00:00"
+  action:
+    service: switch.turn_off
+    entity_id: switch.kuche_oben
