@@ -1,0 +1,19 @@
+device_tracker.medionpad:
+  templates:
+    theme: >
+      if (state === 'home') return 'green'; else return 'red';
+    _stateDisplay: if (state === 'home') return 'Online'; else return 'Offline';
+
+sensor.medionpad:
+  templates:
+    theme: >
+      if (state === 'online') return 'green'; else return 'red';
+    _stateDisplay: if (state === 'online') return 'Online'; else return 'Offline';
+    
+light.steckdose_2:
+  friendly_name: Steckdose 360Cam
+  icon: mdi:power-socket-eu
+
+light.steckdose_3:
+  friendly_name: Steckdose Pi3 Hassio
+  icon: mdi:power-socket-eu
