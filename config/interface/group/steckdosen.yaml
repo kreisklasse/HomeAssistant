@@ -93,4 +93,4 @@ osramplugs:
     - light.steckdose_2
     - light.steckdose_3
     - light.onoff_plug_1
-    - light.steckdose_5
+    - light.onoff_plug_1_2
