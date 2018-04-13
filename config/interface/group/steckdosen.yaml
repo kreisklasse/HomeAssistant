@@ -12,6 +12,7 @@ steckdosen:
     - group.fritzassistenten
     - group.fritztv
     - group.fritzbed
+    - group.osramplugs
     
 fritzkuchemitte:
   name: Küche Mitte
@@ -84,3 +85,12 @@ fritztv:
     - sensor.fritztvwatt
     - sensor.fritztvkwh
     - sensor.fritztvtemp
+    
+osramplugs:
+  name: Osram Plugs
+  entities:
+    - light.steckdose_wohzimmer
+    - light.steckdose_2
+    - light.steckdose_3
+    - light.onoff_plug_1
+    - light.steckdose_5
