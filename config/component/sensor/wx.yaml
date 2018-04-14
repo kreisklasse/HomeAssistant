@@ -38,3 +38,6 @@
     - mediumClouds
     - highClouds
     - dewpointTemperature
+
+- platform: dwd_weather_warnings
+  region_name: !secret home_region
