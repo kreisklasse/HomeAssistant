@@ -20,3 +20,21 @@
     - cloud_cover
   update_interval:
     minutes: 5
+
+- platform: yr
+  name: yr Wetter
+  forecast: 24
+  monitored_conditions:
+    - temperature
+    - symbol
+    - precipitation
+    - windSpeed
+    - pressure
+    - windDirection
+    - humidity
+    - fog
+    - cloudiness
+    - lowClouds
+    - mediumClouds
+    - highClouds
+    - dewpointTemperature
