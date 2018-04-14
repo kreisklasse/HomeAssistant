@@ -1,1 +1,6 @@
 - platform: bluetooth_tracker
+
+# - platform: bluetooth_le_tracker
+# on Hass.io
+# Unable to install package gattlib==0.20150805: Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-j6tsae1v/gattlib/
+# Unable to prepare setup for platform device_tracker.bluetooth_le_tracker: Could not install all requirements.
