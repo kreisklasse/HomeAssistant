@@ -12,19 +12,19 @@ darksky:
   name: Darksky Wetter
   entities:
     - sensor.dark_sky_temperature
+    - sensor.dark_sky_humidity
+    - sensor.dark_sky_pressure
+    - sensor.dark_sky_wind_bearing
+    - sensor.dark_sky_wind_speed
+    - sensor.dark_sky_cloud_coverage
     - sensor.dark_sky_apparent_temperature
     - sensor.dark_sky_daily_low_temperature
     - sensor.dark_sky_daily_high_temperature
+    - sensor.dark_sky_ozone
+    - sensor.dark_sky_visibility
     - sensor.dark_sky_icon
     - sensor.dark_sky_hourly_summary
-    - sensor.dark_sky_pressure
-    - sensor.dark_sky_humidity
-    - sensor.dark_sky_ozone
-    - sensor.dark_sky_cloud_coverage
-    - sensor.dark_sky_visibility
-    - sensor.dark_sky_wind_bearing
-    - sensor.dark_sky_wind_speed
-    
+
 luftdaten:
   name: Luftdaten Wolsdorf
   entities:
@@ -37,12 +37,12 @@ yr:
   name: yr Wetter
   entities:
     - sensor.yr_wetter_temperature
-    - sensor.yr_wetter_symbol
-    - sensor.yr_wetter_pressure
     - sensor.yr_wetter_humidity
-    - sensor.yr_wetter_cloudiness
+    - sensor.yr_wetter_pressure
     - sensor.yr_wetter_wind_direction
     - sensor.yr_wetter_wind_speed
+    - sensor.yr_wetter_cloudiness
+    - sensor.yr_wetter_symbol
 
 dwd:
   name: DWD
