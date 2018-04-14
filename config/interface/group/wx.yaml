@@ -1,0 +1,31 @@
+weather:
+  name: Umwelt
+  view: yes
+  icon: mdi:weather-lightning-rainy
+  entities:
+    - group.darksky
+    - group.luftdaten
+    
+darksky:
+  name: Darksky Wetter
+  entities:
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_apparent_temperature
+    - sensor.dark_sky_daily_low_temperature
+    - sensor.dark_sky_daily_high_temperature
+    - sensor.dark_sky_icon
+    - sensor.dark_sky_hourly_summary
+    - sensor.dark_sky_pressure
+    - sensor.dark_sky_ozone
+    - sensor.dark_sky_cloud_coverage
+    - sensor.dark_sky_visibility
+    - sensor.dark_sky_wind_bearing
+    - sensor.dark_sky_wind_speed
+    
+luftdaten:
+  name: Luftdaten Wolsdorf
+  entities:
+    - sensor.luftdaten_temperature
+    - sensor.luftdaten_humidity
+    - sensor.wolsdorf_pm25
+    - sensor.wolsdorf_pm10
