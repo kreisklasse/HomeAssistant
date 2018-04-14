@@ -4,7 +4,9 @@ weather:
   icon: mdi:weather-lightning-rainy
   entities:
     - group.darksky
+    - group.yr
     - group.luftdaten
+    - group.dwd
     
 darksky:
   name: Darksky Wetter
@@ -16,6 +18,7 @@ darksky:
     - sensor.dark_sky_icon
     - sensor.dark_sky_hourly_summary
     - sensor.dark_sky_pressure
+    - sensor.dark_sky_humidity
     - sensor.dark_sky_ozone
     - sensor.dark_sky_cloud_coverage
     - sensor.dark_sky_visibility
@@ -29,3 +32,20 @@ luftdaten:
     - sensor.luftdaten_humidity
     - sensor.wolsdorf_pm25
     - sensor.wolsdorf_pm10
+
+yr:
+  name: yr Wetter
+  entities:
+    - sensor.yr_wetter_temperature
+    - sensor.yr_wetter_symbol
+    - sensor.yr_wetter_pressure
+    - sensor.yr_wetter_humidity
+    - sensor.yr_wetter_cloudiness
+    - sensor.yr_wetter_wind_direction
+    - sensor.yr_wetter_wind_speed
+
+dwd:
+  name: DWD
+  entities:
+    - sensor.dwdweatherwarnings_current_warning_level
+    - sensor.dwdweatherwarnings_advance_warning_level
