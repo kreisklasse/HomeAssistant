@@ -1,0 +1,20 @@
+auto:
+  name: Auto
+  view: yes
+  icon: mdi:car
+  entities:
+    - group.fuel
+    - group.traveltime
+    
+fuel:
+  name: Kraftstoffkosten
+  entities:
+    - sensor.mundorf_e10
+    - sensor.zeithstr_e10
+    
+traveltime:
+  name: Fahrzeiten
+  entities:
+    - sensor.fahrzeit_arbeit
+    - sensor.fahrzeit_heimat
+    - sensor.waze_travel_time
