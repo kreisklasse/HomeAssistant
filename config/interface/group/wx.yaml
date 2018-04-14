@@ -13,6 +13,7 @@ darksky:
   entities:
     - sensor.dark_sky_temperature
     - sensor.dark_sky_humidity
+    - sensor.dark_sky_dew_point
     - sensor.dark_sky_pressure
     - sensor.dark_sky_wind_bearing
     - sensor.dark_sky_wind_speed
@@ -38,10 +39,14 @@ yr:
   entities:
     - sensor.yr_wetter_temperature
     - sensor.yr_wetter_humidity
+    - sensor.yr_wetter_dewpoint_temperature
     - sensor.yr_wetter_pressure
     - sensor.yr_wetter_wind_direction
     - sensor.yr_wetter_wind_speed
     - sensor.yr_wetter_cloudiness
+    - sensor.yr_wetter_high_clouds
+    - sensor.yr_wetter_medium_clouds
+    - sensor.yr_wetter_low_clouds
     - sensor.yr_wetter_symbol
 
 dwd:
