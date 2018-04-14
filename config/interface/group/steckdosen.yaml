@@ -13,6 +13,7 @@ steckdosen:
     - group.fritztv
     - group.fritzbed
     - group.osramplugs
+    - group.zwaveplugs
     
 fritzkuchemitte:
   name: Küche Mitte
@@ -94,3 +95,8 @@ osramplugs:
     - light.steckdose_3
     - light.onoff_plug_1
     - light.onoff_plug_1_2
+
+zwaveplugs:
+  name: Zwave Plugs
+  entities:
+    - switch.switch_3
