@@ -100,3 +100,6 @@ zwaveplugs:
   name: Zwave Plugs
   entities:
     - switch.switch_3
+    - sensor.unknown
+    - sensor.fibaro_system_fgwpef_wall_plug_power
+    - sensor.fibaro_system_fgwpef_wall_plug_power_2
