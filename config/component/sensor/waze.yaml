@@ -1,4 +1,17 @@
 - platform: waze_travel_time
+  name: Heimat
   origin: !secret google_origin
   destination: !secret google_destination_heimat
+  region: 'EU'
+  
+- platform: waze_travel_time
+  name: CGN-EIN
+  origin: !secret waze_dep1
+  destination: !secret waze_dest1
+  region: 'EU'
+  
+- platform: waze_travel_time
+  name: EIN-CGN
+  origin: !secret waze_dest1
+  destination: !secret waze_dep1
   region: 'EU'
