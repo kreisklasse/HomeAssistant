@@ -17,4 +17,6 @@ traveltime:
   entities:
     - sensor.fahrzeit_arbeit
     - sensor.fahrzeit_heimat
-    - sensor.waze_travel_time
+    - sensor.heimat
+    - sensor.cgnein
+    - sensor.eincgn
