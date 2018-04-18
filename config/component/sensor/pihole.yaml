@@ -1,5 +1,18 @@
 - platform: pi_hole
-  host: !secret pi2vpnhole_ip
+  host: !secret pihole1_ip
+  name: pihole 1
+  monitored_conditions:
+    - ads_blocked_today
+    - ads_percentage_today
+    - dns_queries_today
+    - unique_domains
+    - domains_being_blocked
+    - unique_clients
+    - queries_forwarded
+    
+- platform: pi_hole
+  host: !secret pihole2_ip
+  name: pihole 2
   monitored_conditions:
     - ads_blocked_today
     - ads_percentage_today
