@@ -1,4 +1,4 @@
-# configuration.yaml - 13.04.2018-a
+# configuration.yaml - 18.04.2018-a
 
 homeassistant:
   name: Home
@@ -28,10 +28,10 @@ hue:
       allow_unreachable: true
       allow_hue_groups: true
 map:
-mqtt:
-  broker: core-mosquitto
-  username: !secret mqtt_id
-  password: !secret mqtt_pw
+#mqtt:
+#  broker: core-mosquitto
+#  username: !secret mqtt_id
+#  password: !secret mqtt_pw
 script: !include scripts.yaml
 sun:
 tts:
