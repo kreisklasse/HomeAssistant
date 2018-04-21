@@ -1,6 +1,16 @@
-  exclude:
+exclude:
     entities:
       - sun.sun
+      - sensor.alarm_level
+      - sensor.alarm_type
+      - sensor.date
+      - sensor.date__time
+      - sensor.internet_time
+      - sensor.time
+      - sensor.time__date
+      - sensor.time_utc
+      - sensor.fibaro_system_fgms001zw5_motion_sensor_burglar
+      - sensor.fibaro_system_fgms001zw5_motion_sensor_sourcenodeid
       - sensor.since_last_boot
       - media_player.kuche
       - media_player.kuche_2
