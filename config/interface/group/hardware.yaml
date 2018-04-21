@@ -3,12 +3,13 @@ hardwareinfo:
   view: yes
   icon: mdi:chip
   entities:
+    - group.pi1
+    - group.pi2
+    - group.pi3
     - group.homeautomation
     - group.hardware
     - group.hardware_mobil
     - group.hardware_streaming
-    - group.pihole
-    - group.pihassio
     
 homeautomation:
   name: Home Automation
@@ -45,27 +46,55 @@ hardware_streaming:
     - sensor.firesticktvsu
     - sensor.ccaudiokuche
     
-pihole:
-  name: Hardware - Pi2 piHoleVPN
-  entities:    
-    - sensor.pi2
-    - sensor.pi2vpnhole_netdata_uptime
-    - sensor.pihole_dns_queries_today
-    - sensor.pihole_ads_blocked_today
-    - sensor.pihole_dns_queries_forwarded
-    - sensor.pihole_dns_unique_clients
-    - sensor.pi2vpnhole_netdata_system_load
-    - sensor.pi2vpnhole_netdata_ram_used
-    - sensor.pi2vpnhole_netdata_swap_used
+pi1:
+  name: Hardware Pi1 PiHole
+  entities:
+    - device_tracker.piholepi1
+    - sensor.pi1hole
+    - sensor.pi1_netdata_uptime
+    - sensor.pi1_netdata_system_load
+    - sensor.pi1_netdata_ram_used
+    - sensor.pi1_netdata_ram_free
+    - sensor.pi1_netdata_swap_used
+    - sensor.pi1_netdata_swap_free
+    - sensor.pihole_1_ads_blocked_today
+    - sensor.pihole_1_ads_percentage_blocked_today
+    - sensor.pihole_1_dns_queries_today
+    - sensor.pihole_1_dns_queries_forwarded
+    - sensor.pihole_1_dns_unique_clients
+    - sensor.pihole_1_dns_unique_domains
+    - sensor.pihole_1_domains_blocked
     
-pihassio:
-  name: Hardware - pi3Hassio
-  entities:    
+pi2:
+  name: Hardware Pi2 PiHole-OpenVPN
+  entities:
+    - device_tracker.pi2
+    - sensor.pi2
+    - sensor.pi2_netdata_uptime
+    - sensor.pi2_netdata_system_load
+    - sensor.pi2_netdata_ram_used
+    - sensor.pi2_netdata_ram_free
+    - sensor.pi2_netdata_swap_used
+    - sensor.pi2_netdata_swap_free
+    - sensor.pihole_2_ads_blocked_today
+    - sensor.pihole_2_ads_percentage_blocked_today
+    - sensor.pihole_2_dns_queries_today
+    - sensor.pihole_2_dns_queries_forwarded
+    - sensor.pihole_2_dns_unique_clients
+    - sensor.pihole_2_dns_unique_domains
+    - sensor.pihole_2_domains_blocked
+    
+pi3:
+  name: Hardware Pi3 HomeAssistant
+  entities:
+    - sensor.ha_uptime
+    - sensor.last_boot
     - sensor.since_last_boot
-    - sensor.memory_use
-    - sensor.memory_use_percent
-    - sensor.swap_use_percent
     - sensor.load_1m
     - sensor.load_5m
     - sensor.load_15m
     - sensor.processor_use
+    - sensor.memory_use
+    - sensor.memory_free
+    - sensor.memory_use_percent
+    - sensor.swap_use_percent
