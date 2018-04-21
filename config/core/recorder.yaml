@@ -18,6 +18,13 @@ exclude:
     - sensor.dark_sky_icon
     - sensor.dark_sky_nearest_storm_distance
     - sensor.dark_sky_precip
+    - sensor.date
+    - sensor.date__time
+    - sensor.internet_time
+    - sensor.time
+    - sensor.time__date
+    - sensor.time_utc
+    - sensor.fibaro_system_fgms001zw5_motion_sensor_sourcenodeid
     - sensor.fritzbox_su
     - sensor.fritz_netmonitor
     - sensor.ha_uptime
