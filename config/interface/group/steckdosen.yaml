@@ -101,6 +101,5 @@ zwaveplugs:
   entities:
     - switch.switch_3
     - sensor.unknown
-    - sensor.fibaro_system_fgwpef_wall_plug_power
     - sensor.fibaro_system_fgwpef_wall_plug_power_2
     - sensor.fibaro_system_fgms001zw5_motion_sensor_temperature	
