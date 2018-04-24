@@ -32,6 +32,13 @@ map:
 #  broker: core-mosquitto
 #  username: !secret mqtt_id
 #  password: !secret mqtt_pw
+#notify:
+#  - name: Mastodon
+#    platform: mastodon
+#    access_token: !secret mastodon_token
+#    client_id: !secret mastodon_id
+#    client_secret: !secret mastodon_secret
+#    base_url: !secret mastodon_baseurl
 script: !include scripts.yaml
 sun:
 tts:
