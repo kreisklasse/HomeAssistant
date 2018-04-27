@@ -1,0 +1,23 @@
+- platform: google_travel_time
+  api_key: !secret google_traffic_api
+  name: Fahrzeit CGN-EIN
+  origin: !secret ort_cgn
+  destination: !secret ort_ein
+  
+- platform: google_travel_time
+  api_key: !secret google_traffic_api
+  name: Fahrzeit EIN-CGN
+  origin: !secret ort_ein
+  destination: !secret ort_cgn
+    
+- platform: google_travel_time
+  api_key: !secret google_traffic_api
+  name: Fahrzeit SU-Home
+  origin: !secret ort_su
+  destination: !secret ort_heimat
+
+- platform: google_travel_time
+  api_key: !secret google_traffic_api
+  name: Fahrzeit Home-SU
+  origin: !secret ort_heimat
+  destination: !secret ort_su
