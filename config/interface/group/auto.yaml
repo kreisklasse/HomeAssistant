@@ -15,8 +15,10 @@ fuel:
 traveltime:
   name: Fahrzeiten
   entities:
-    - sensor.fahrzeit_arbeit
-    - sensor.fahrzeit_heimat
+    - sensor.fahrzeit_suhome
     - sensor.heimat
+    - sensor.fahrzeit_homesu
+    - sensor.fahrzeit_cgnein
     - sensor.cgnein
+    - sensor.fahrzeit_eincgn
     - sensor.eincgn
