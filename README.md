@@ -9,7 +9,7 @@ For more look at my [Github Wiki](https://github.com/kreisklasse/HomeAssistant/w
 
 - [Home-Assistant.io](https://home-assistant.io/) 
 - [HASS.io](https://home-assistant.io/getting-started/) - Hassbian Docker Version running on Pi with [resinOS](https://resin.io/)
-- // [HASSbian - Raspbian Image mit HomeAssistant auto-installer](https://home-assistant.io/docs/configuration/splitting_configuration/) // i switched to HASS.io Docker Version
+- [HASSbian - Raspbian Image mit HomeAssistant auto-installer](https://home-assistant.io/docs/configuration/splitting_configuration/)
 - [Splitting up the configuration.yaml](https://github.com/cbulock/home-assistant-configs)
 - [Storing secrets](https://home-assistant.io/docs/configuration/secrets/)
 
