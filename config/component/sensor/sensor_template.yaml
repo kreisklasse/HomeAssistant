@@ -2,17 +2,14 @@
   sensors:
     
 # Hardware Status on-offline
-    acerdesktop:
-      friendly_name: Acer Desktop
-      value_template: "{{ 'Online' if is_state('device_tracker.acerdesktop', 'home') else 'Offline' }}"
     alexa:
       friendly_name: Alexa
       value_template: "{{ 'Online' if is_state('device_tracker.alexa', 'home') else 'Offline' }}"
     amazonfire7:
       friendly_name: Amazon Fire7 Pad
-      value_template: "{{ 'Online' if is_state('device_tracker.amazonca1158079', 'home') else 'Offline' }}"
+      value_template: "{{ 'Online' if is_state('device_tracker.amazonfire7', 'home') else 'Offline' }}"
     firesticktvsu:
-      friendly_name: Amazon Fire Stick - SU
+      friendly_name: Amazon Fire Stick
       value_template: "{{ 'Online' if is_state('device_tracker.amazonfiresticksu', 'home') else 'Offline' }}"
     arcospad:
       friendly_name: Arcos Pad
@@ -38,43 +35,51 @@
     googlehomemini:
       friendly_name: Google Home Mini
       value_template: "{{ 'Online' if is_state('device_tracker.googlehomemini', 'home') else 'Offline' }}"
+    pi3hass:
+      friendly_name: Raspberry Pi 3 - HASS
+      value_template: "{{ 'Online' if is_state('device_tracker.homeassistant', 'home') else 'Offline' }}"
     nexus6p:
       friendly_name: Huawei Nexus 6P
-      value_template: "{{ 'Online' if is_state('device_tracker.huaweinexus6poliverpitzke', 'home') else 'Offline' }}"
+      value_template: "{{ 'Online' if is_state('device_tracker.huaweinexus6p', 'home') else 'Offline' }}"
     huelightshub:
       friendly_name: HUE Hub
       value_template: "{{ 'Online' if is_state('device_tracker.huelights', 'home') else 'Offline' }}"
     ikealightshub:
       friendly_name: IKEA Tradfri Hub
       value_template: "{{ 'Online' if is_state('device_tracker.ikealights', 'home') else 'Offline' }}"
+    360cam:
+      friendly_name: 360 Cam
+      value_template: "{{ 'Online' if is_state('device_tracker.localcam', 'home') else 'Offline' }}"
     medionpad:
       friendly_name: Medion Pad
       value_template: "{{ 'Online' if is_state('device_tracker.medionpad', 'home') else 'Offline' }}"
+    acerlaptop:
+      friendly_name: Acer Laptop
+      value_template: "{{ 'Online' if is_state('device_tracker.mobileacermobileolli', 'home') else 'Offline' }}"
+    odroid:
+      friendly_name: Odroid C2
+      value_template: "{{ 'Online' if is_state('device_tracker.odroid', 'home') else 'Offline' }}"
     pi1hole:
       friendly_name: Raspberry Pi 1 - piHole
       value_template: "{{ 'Online' if is_state('device_tracker.piholepi1', 'home') else 'Offline' }}"
     pi2:
       friendly_name: Raspberry Pi 2 - piHoleVPN
       value_template: "{{ 'Online' if is_state('device_tracker.pi2', 'home') else 'Offline' }}"
-    pi3iob:
-      friendly_name: Raspberry Pi 3 - ioBroker
-      value_template: "{{ 'Online' if is_state('device_tracker.iobrokerpi', 'home') else 'Offline' }}"
+    pi1munin:
+      friendly_name: Raspberry Pi 1 - Munin
+      value_template: "{{ 'Online' if is_state('device_tracker.raspberrypi', 'home') else 'Offline' }}"
     samsungtv:
       friendly_name: Samsung TV
       value_template: "{{ 'Online' if is_state('device_tracker.samsungtv', 'home') else 'Offline' }}"
-    sonos5:
-      friendly_name: Sonos Play 5
-      value_template: "{{ 'Online' if is_state('device_tracker.sonos5', 'home') else 'Offline' }}"
-    sonosbar:
-      friendly_name: Sonos Play Bar
-      value_template: "{{ 'Online' if is_state('device_tracker.sonosbar', 'home') else 'Offline' }}"
     sonosbridge:
       friendly_name: Sonos Bridge
       value_template: "{{ 'Online' if is_state('device_tracker.sonosbridge', 'home') else 'Offline' }}"
     surfacebw:
       friendly_name: Surface Pro
-      value_template: "{{ 'Online' if is_state('device_tracker.laptop145438848', 'home') else 'Offline' }}"
-    
+      value_template: "{{ 'Online' if is_state('device_tracker.surfaceprobw', 'home') else 'Offline' }}"
+    zyxelswitch:
+      friendly_name: Zyxel Switch
+      value_template: "{{ 'Online' if is_state('device_tracker.zyxelswitch', 'home') else 'Offline' }}"
       
 
 # FritzDECT 200 Steckdosen
