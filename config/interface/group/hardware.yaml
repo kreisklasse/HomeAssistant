@@ -6,48 +6,9 @@ hardwareinfo:
     - group.pi1
     - group.pi2
     - group.pi3
-    - group.homeautomation
-    - group.hardware
-    - group.hardware_mobil
-    - group.hardware_streaming
-    
-homeautomation:
-  name: Home Automation
-  entities:
-    - sensor.alexa
-    - sensor.googlehome
-    - sensor.googlehomemini
-    - sensor.huelightshub
-    - sensor.ikealightshub
-    - sensor.pi2
-    - sensor.pi3iob
-
-hardware:
-  name: Hardware
-  entities:
-    - sensor.chromebox
-    - sensor.acerdesktop
-    - sensor.epsonbx525wd
-    - sensor.freifunkrouter
-
-hardware_mobil:
-  name: Hardware - Mobil
-  entities:
-    - sensor.medionpad
-    - sensor.amazonfire7
-    - sensor.nexus6p
-    - sensor.surfacebw
-    
-hardware_streaming:
-  name: Hardware - TV & Streaming
-  entities:
-    - sensor.samsungtv
-    - sensor.ccvideotv
-    - sensor.firesticktvsu
-    - sensor.ccaudiokuche
     
 pi1:
-  name: Hardware Pi1 PiHole
+  name: Hardware Pi1 PiHole DNSoverTLS
   entities:
     - device_tracker.piholepi1
     - sensor.pi1hole
@@ -57,10 +18,10 @@ pi1:
     - sensor.pi1_netdata_ram_free
     - sensor.pi1_netdata_swap_used
     - sensor.pi1_netdata_swap_free
-    - sensor.pihole_1_ads_blocked_today
-    - sensor.pihole_1_ads_percentage_blocked_today
     - sensor.pihole_1_dns_queries_today
     - sensor.pihole_1_dns_queries_forwarded
+    - sensor.pihole_1_ads_blocked_today
+    - sensor.pihole_1_ads_percentage_blocked_today
     - sensor.pihole_1_dns_unique_clients
     - sensor.pihole_1_dns_unique_domains
     - sensor.pihole_1_domains_blocked
@@ -76,10 +37,10 @@ pi2:
     - sensor.pi2_netdata_ram_free
     - sensor.pi2_netdata_swap_used
     - sensor.pi2_netdata_swap_free
-    - sensor.pihole_2_ads_blocked_today
-    - sensor.pihole_2_ads_percentage_blocked_today
     - sensor.pihole_2_dns_queries_today
     - sensor.pihole_2_dns_queries_forwarded
+    - sensor.pihole_2_ads_blocked_today
+    - sensor.pihole_2_ads_percentage_blocked_today
     - sensor.pihole_2_dns_unique_clients
     - sensor.pihole_2_dns_unique_domains
     - sensor.pihole_2_domains_blocked
