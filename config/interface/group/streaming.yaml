@@ -1,0 +1,13 @@
+streaming:
+  name: Streaming
+  view: yes
+  icon: mdi:volume-high
+  entities:
+    - media_player.home_ue55f8000  # Samsung TV
+    - media_player.wohnzimmer_2    # Sonos Playbar
+    - media_player.wohnzimmer      # Google Home
+    - media_player.fernseher       # Chromecast 2
+    - media_player.schlafzimmer    # Goggle Home Mini
+    - media_player.schlafzimmer_2  # Sonos 3
+    - media_player.kuche           # Chromecast Audio
+    - media_player.kuche_2         # Sonos 5
