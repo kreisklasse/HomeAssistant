@@ -1,0 +1,45 @@
+light:
+  name: Licht
+  view: yes
+  icon: mdi:lightbulb-on
+  entities:
+    - group.buro
+    - group.bed
+    - group.wohnzimmer
+    - group.kuche
+    - group.all
+    
+all:
+  name: Lampen - Wohnung
+  entities:
+    - light.schreibtisch
+    - light.buroturm
+    - light.gate
+    - light.kuchentisch
+    - light.steckdose_4
+    - light.wohnzimmer
+    - light.steckdose_wohzimmer
+    - switch.kuche_oben
+    
+buro:
+  name: Lampen - Büro
+  entities:
+    - light.schreibtisch
+    - light.buroturm
+    
+bed:
+  name: Lampen - Schlafzimmer
+  entities:
+    - light.kuchentisch
+    - light.steckdose_4
+    
+wohnzimmer:
+  name: Lampen - Wohnzimmer
+  entities:
+    - light.wohnzimmer
+    - light.steckdose_wohzimmer
+    
+kuche:
+  name: Lampen - Küche
+  entities:
+    - switch.kuche_oben
