@@ -1,5 +1,3 @@
-# configuration.yaml - 18.04.2018-a
-
 homeassistant:
   name: Home
   latitude: !secret home_latitude
@@ -22,12 +20,24 @@ duckdns:
 frontend:
 group: !include_dir_merge_named config/interface/group
 http:
+  api_password: !secret hass_http_api_pw
+  # CORS access is optional
+  #cors_allowed_origins:
+  #  - https://reformedreality.com
+  #  - http://reformedreality.com
+  trusted_networks:
+    - 127.0.0.1
+    - ::1
+    - 192.168.0.0/24
+    - 192.168.178.0/24
 hue:
   bridges:
     - host: !secret hue_ip
       allow_unreachable: true
       allow_hue_groups: true
 map:
+media_player:
+  - platform: sonos
 #mqtt:
 #  broker: core-mosquitto
 #  username: !secret mqtt_id
@@ -39,6 +49,12 @@ map:
 #    client_id: !secret mastodon_id
 #    client_secret: !secret mastodon_secret
 #    base_url: !secret mastodon_baseurl
+panel_iframe:
+  nodered:
+    title: 'Node-Red'
+    icon: 'mdi:shuffle-variant'
+    url: 'http://127.0.0.1:1880/'
+
 script: !include scripts.yaml
 sun:
 tts:
