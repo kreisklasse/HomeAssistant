@@ -1,6 +1,8 @@
 # Kitchen - switch blue LED-stripes: on at sunset / off 22:00 / daily
 # Bedroom - switch LED-stripes: on at sunset / off 22:00 / daily
-# 27.04.2018-a
+# Büroturm - switchon at sunset / off 24:00 / daily
+# Wohnzimmertisch - switchon at sunset / off 24:00 / daily
+# 29.05.2018-a
 #
 - alias: LED Küche/Bed An
   initial_state: True
@@ -14,6 +16,10 @@
       entity_id: switch.kuche_oben
     - service: light.turn_on
       entity_id: light.steckdose_4
+    - service: light.turn_on
+      entity_id: light.buroturm
+    - service: light.turn_on
+      entity_id: light.wohnzimmertisch
 
 - alias: LED Küche/Bed Aus
   initial_state: True
@@ -26,3 +32,15 @@
       entity_id: switch.kuche_oben
     - service: light.turn_off
       entity_id: light.steckdose_4
+      
+- alias: Büroturm Aus
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: "23:59:59"
+  action:
+    - service: light.turn_off
+      entity_id: light.buroturm
+    - service: light.turn_off
+      entity_id: light.wohnzimmertisch
