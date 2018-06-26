@@ -1,23 +1,9 @@
 - platform: netdata
-  host: !secret pihole1_ip
-  port: 19999
-  name: pi1 Netdata
-  resources:
-    - memory_free
-    - memory_used
-    - system_load
-    - swap_free
-    - swap_used
-    - uptime
-    
-- platform: netdata
   host: !secret pihole2_ip
   port: 19999
   name: pi2 Netdata
   resources:
-    - memory_free
-    - memory_used
-    - system_load
-    - swap_free
-    - swap_used
-    - uptime
+    system.load:
+        element: load15
+    system.cpu:
+        element: system
