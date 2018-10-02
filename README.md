@@ -1,3 +1,6 @@
+# New Updates will only be postet at https://gitlab.com/mikebutton
+## Visit me there.
+
 # HomeAssistant
 
 My Home Assistant configuration files are running on my [Hass.io](https://www.home-assistant.io/hassio/) installation on a RaspberryPi 3 and an Odroid C2.
