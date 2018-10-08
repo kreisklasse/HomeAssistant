@@ -1,5 +1,4 @@
-# New Updates will only be postet at https://gitlab.com/mikebutton
-## For Home-Assistant files Visit me there: https://gitlab.com/mikebutton/homeassistant-files
+# New Updates will only be postet at https://github.com/kreisklasse/HAssOS-Configuration/tree/master
 
 # HomeAssistant
 
