@@ -1,4 +1,4 @@
-# New Updates will only be postet at https://github.com/kreisklasse/HAssOS-Configuration/tree/master
+## Paused this repositorie, look here: https://github.com/kreisklasse/HAssOS-Configuration
 
 # HomeAssistant
 
