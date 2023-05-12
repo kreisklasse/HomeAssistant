@@ -1,0 +1,25 @@
+alias: MQTT_awtrix_PV
+description: mqtt_Awtrix_pv
+trigger:
+  - platform: time_pattern
+    seconds: /30
+condition:
+  - condition: sun
+    after: sunrise
+    before: sunset
+action:
+  - service: mqtt.publish
+    data:
+      qos: 2
+      retain: true
+      payload: |-
+        {
+          "text": "{{ states.sensor.pvpi3acoutput.state }}",
+          "icon": "52900",
+          "rainbow": false
+        }
+      topic: awtrix1n/custom/pvac
+mode: single
+
+# sensor.solarlog_power_ac  | pi3
+# sensor.pvpi3acoutput      | n2p
