@@ -1,6 +1,6 @@
-## Paused this repositorie, look here: https://github.com/kreisklasse/HAssOS-Configuration
-
 # HomeAssistant
+
+#TO BE UPDATED - IN PROGRESS
 
 My Home Assistant configuration files are running on my [Hass.io](https://www.home-assistant.io/hassio/) installation on a RaspberryPi 3 and an Odroid C2.
 
