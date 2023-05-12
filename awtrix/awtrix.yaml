@@ -33,7 +33,7 @@ data:
     
 # awtrix - screen off at sunset +45min - via HomeAssistant (NOT TESTED YET)
 alias: MQTT_awtrix_screenoff_ss
-description: MQTT Awtrix Screen Off at SS
+description: MQTT Awtrix Screen OFF at SS
 trigger:
   - platform: sun
     event: sunset
@@ -46,15 +46,15 @@ action:
       retain: false
       payload: |-
         {
-          power:false
+          "power":false
         }
       topic: awtrix1n/power
 mode: single
 
 
 # awtrix - screen on at sunrise -45min - via HomeAssistant (NOT TESTED YET)
-alias: MQTT_awtrix_screenoff_ss
-description: MQTT Awtrix Screen Off at SS
+alias: MQTT_awtrix_screenon_sr
+description: MQTT Awtrix Screen ON at SR
 trigger:
   - platform: sun
     event: sunrise
@@ -67,7 +67,7 @@ action:
       retain: false
       payload: |-
         {
-          power:false
+          "power":false
         }
       topic: awtrix1n/power
 mode: single
