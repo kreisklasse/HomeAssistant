@@ -1,7 +1,14 @@
 # get color HEX codes
 # https://www.color-hex.com/
 
-# awtrix - indicator light - upper right - via HomeAssi
+# HowTo's
+# https://github.com/Blueforcer/awtrix-light/tree/main/docs
+# https://jbetzen.net/posts/pixelclock/
+# https://jbetzen.net/posts/pixelclock-custom-app-collection/
+
+#
+#
+# awtrix - indicator light - upper right ON red - via HomeAssistant
 service: mqtt.publish
 data:
   qos: 2
@@ -9,5 +16,58 @@ data:
   topic: awtrix1n/indicator1
   payload: |-
     {  
-      "color":"#f7e810"
+      "color":"#FF2E00"
     }
+
+
+# awtrix - indicator light - upper right OFF - via HomeAssistant
+service: mqtt.publish
+data:
+  qos: 2
+  retain: false
+  topic: awtrix1n/indicator1
+  payload: |-
+    {  
+      "color":""
+    }
+    
+# awtrix - screen off at sunset +45min - via HomeAssistant (NOT TESTED YET)
+alias: MQTT_awtrix_screenoff_ss
+description: MQTT Awtrix Screen Off at SS
+trigger:
+  - platform: sun
+    event: sunset
+    offset: "00:45:00"
+condition: []
+action:
+  - service: mqtt.publish
+    data:
+      qos: 2
+      retain: false
+      payload: |-
+        {
+          power:false
+        }
+      topic: awtrix1n/power
+mode: single
+
+
+# awtrix - screen on at sunrise -45min - via HomeAssistant (NOT TESTED YET)
+alias: MQTT_awtrix_screenoff_ss
+description: MQTT Awtrix Screen Off at SS
+trigger:
+  - platform: sun
+    event: sunrise
+    offset: "-00:45:00"
+condition: []
+action:
+  - service: mqtt.publish
+    data:
+      qos: 2
+      retain: false
+      payload: |-
+        {
+          power:false
+        }
+      topic: awtrix1n/power
+mode: single
