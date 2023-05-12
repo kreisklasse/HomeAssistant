@@ -1,0 +1,13 @@
+# get color HEX codes
+# https://www.color-hex.com/
+
+# awtrix - indicator light - upper right - via HomeAssi
+service: mqtt.publish
+data:
+  qos: 2
+  retain: false
+  topic: awtrix1n/indicator1
+  payload: |-
+    {  
+      "color":"#f7e810"
+    }
