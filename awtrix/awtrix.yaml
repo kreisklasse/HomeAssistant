@@ -9,7 +9,7 @@
 
 #
 #
-# awtrix - indicator light - upper right ON red - via HomeAssistant
+# awtrix - indicator light - upper right ON red & blink 1s intervall - via HomeAssistant
 service: mqtt.publish
 data:
   qos: 2
@@ -17,11 +17,12 @@ data:
   topic: awtrix1n/indicator1
   payload: |-
     {  
-      "color":"#FF2E00"
+      "color":"#FF2E00",
+      "blink":"1000"
     }
 
 
-# awtrix - indicator light - upper right OFF - via HomeAssistant
+# awtrix - indicator light - upper right OFF & blink off - via HomeAssistant
 service: mqtt.publish
 data:
   qos: 2
@@ -29,7 +30,8 @@ data:
   topic: awtrix1n/indicator1
   payload: |-
     {  
-      "color":""
+      "color":"",
+      "blink":""
     }
     
 # awtrix - screen off at sunset +45min - via HomeAssistant (NOT TESTED YET)
