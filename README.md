@@ -1,37 +1,39 @@
 # HomeAssistant
 
-#TO BE UPDATED - IN PROGRESS
+#UPDATE IN PROGRESS
 
-My Home Assistant configuration files are running on my [Hass.io](https://www.home-assistant.io/hassio/) installation on a RaspberryPi 3 and an Odroid C2.
+My Home Assistant configuration files are running on an Odroid N2 and N2+.
 
 For more look at my [Github Wiki](https://github.com/kreisklasse/HomeAssistant/wiki).
 
 
-## Where I started
+## Where to start
 
 - [Home-Assistant.io](https://home-assistant.io/) 
 - [HASS.OS](https://www.home-assistant.io/hassio/)
-- [HASSbian - Raspbian Image mit HomeAssistant auto-installer](https://home-assistant.io/docs/configuration/splitting_configuration/)
 - [Splitting up the configuration.yaml](https://github.com/cbulock/home-assistant-configs)
 - [Storing secrets](https://home-assistant.io/docs/configuration/secrets/)
+- [Zigbee ZHA Library](https://zigbee.blakadder.com/zha.html)
 
 
-## Devices on HAss.OS
+## My Devices on Home Assistant
 
-- Raspberry Pi 3
-- Odroid C2
+- Odroid N2
+- Odroid N2+
+- Conbee II Zigbee Stick
 - AVM FritzDECT 200 Wall Plugs
 - Google Chromecast Audio
 - Google Chromecast
-- Osram Smart+ Plugs via HUE Bridge
-- Philips Hue Bridge (v1)
-- Philips Hue Colour Bulbs (v1) (only 1 still working, 2 died after nearly 2,5 years)
+- [Osram Smart+ Plugs](https://zigbee.blakadder.com/OSRAM_AB3257001NJ.html)
 - Sonos Loudspeaker
-- IKEA TRÅDFRI Bridge
-- IKEA TRÅDFRI White Bulbs
+- IKEA TRÅDFRI bulbs (various bulbs)
+- [IKEA TRÅDFRI Power Plugs](https://zigbee.blakadder.com/Ikea_E1603.html)
+- IKEA TRÅDFRI buttons
+- Ulanzi Awtrix Clock
 - Z-Wave USB.ME Stick
 - Z-Wave Fibaro FGMS001 Motion Sensor
 - Z-Wave Fibaro FGWPEF Wall Plugs
+- [Xiaomi Mi Power Plug](https://zigbee.blakadder.com/Xiaomi_ZNCZ04LM.html)
 
 
 
