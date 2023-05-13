@@ -1,0 +1,16 @@
+# benniju - https://community.home-assistant.io/t/stromgedacht-api-integration/568465
+sensor:
+  - platform: rest
+    resource: https://api.stromgedacht.de/v1/now?zip=70173
+    name: Stromgedacht Status
+    json_attributes: 
+      - state
+    value_template: >
+      {% set mapper = {
+          1: "Grün",
+          2: "Gelb",
+          3: "Orange",
+          4: "Rot",
+      } %}
+      {% set state = value_json.state %}
+      {{ mapper[state] if state in mapper else state }}
