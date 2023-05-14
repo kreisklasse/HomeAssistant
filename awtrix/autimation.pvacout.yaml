@@ -1,0 +1,24 @@
+alias: mqtt_awtrix2s_pv_ac-out
+description: MQTT Awtrix2s PV AC output Actual
+trigger:
+  - platform: time_pattern
+    seconds: /15
+condition:
+  - condition: sun
+    after: sunrise
+    before: sunset
+action:
+  - service: mqtt.publish
+    data:
+      qos: 2
+      retain: true
+      payload: |-
+        {
+          "text": "{{ states.sensor.pvpi3acoutput.state }}",
+          "icon": "40589",
+          "rainbow": false,
+          "background": "",
+          "duration": 10
+        }        
+      topic: awtrix2/custom/pvac
+mode: single
