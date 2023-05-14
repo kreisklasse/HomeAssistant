@@ -1,0 +1,24 @@
+alias: mqtt_awtrix2s_pv_kwh-day
+description: MQTT Awtrix2S PV kwh-day
+trigger:
+  - platform: time_pattern
+    seconds: /59
+condition:
+  - condition: sun
+    after: sunrise
+    before: sunset
+action:
+  - service: mqtt.publish
+    data:
+      qos: 2
+      retain: true
+      payload: |-
+        {
+          "text": "{{ states.sensor.pvpi3kwhtoday.state }}",
+          "icon": "52994",
+          "rainbow": false,
+          "background": "",
+          "duration": 4
+        }
+      topic: awtrix2/custom/pvkwhday
+mode: single
