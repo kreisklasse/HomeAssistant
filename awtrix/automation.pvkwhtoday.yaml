@@ -14,7 +14,7 @@ action:
       retain: true
       payload: |-
         {
-          "text": "{{ states.sensor.pvpi3kwhtoday.state }}",
+          "text": "{{ states.sensor.pvpi3kwhtoday.state  | round(1)}}",
           "icon": "52994",
           "rainbow": false,
           "background": "",
